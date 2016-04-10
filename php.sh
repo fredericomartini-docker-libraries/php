@@ -10,8 +10,8 @@ INSTALL_SUCCESS=$?
 if [ ! $INSTALL_SUCCESS -eq 0 ]; then
     echo "Erro na instalação do PHP"
 else
-    sed -i "s,error_reporting =.*,error_reporting = E_ALL,g" $PHP_DIR/php.ini
-    sed -i "s,display_errors =.*,display_errors = On,g" $PHP_DIR/php.ini
+    sed -i "s,error_reporting =.*,error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT,g" $PHP_DIR/php.ini
+    sed -i "s,display_errors =.*,display_errors = Off,g" $PHP_DIR/php.ini
     sed -i "s,;date.timezone =.*,date.timezone = America/Sao_Paulo,g" $PHP_DIR/php.ini
     sed -i "s,;default_charset =.*,default_charset = \"UTF-8\",g" $PHP_DIR/php.ini 
     sed -i "s,short_open_tag =.*,short_open_tag = On,g" $PHP_DIR/php.ini 
