@@ -5,14 +5,14 @@
 
 ###### VARIABLES #####################
 WEB_DIR_FILES='/var/www/'
-CONTAINER_NAME='dev-php56-dev'
-DOCKER_REPO_IMG_TAG='fredericomartini/php:5.6-dev'
+CONTAINER_NAME='php56-dev'
+DOCKER_REPO_IMG_TAG='fredericomartini/php:5.6-dev2'
 LOCAL_PORT=5601 #start with the same version php
 #####################################
 
 /usr/bin/docker stop $CONTAINER_NAME
 /usr/bin/docker rm $CONTAINER_NAME
-/usr/bin/docker pull $DOCKER_REPO_IMG_TAG 
+#/usr/bin/docker pull $DOCKER_REPO_IMG_TAG 
 
-docker run  -d -p $LOCAL_PORT:80 --name $CONTAINER_NAME -v $WEB_DIR_FILES:/var/www/ $DOCKER_REPO_IMG_TAG /usr/sbin/apache2ctl -D FOREGROUND
+docker run  -d -p $LOCAL_PORT:80 --name $CONTAINER_NAME -v $WEB_DIR_FILES:/var/www/ $DOCKER_REPO_IMG_TAG  /usr/sbin/apache2ctl -D FOREGROUND
 
