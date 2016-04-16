@@ -5,7 +5,7 @@
 
 ###### VARIABLES #####################
 WEB_DIR_FILES='/var/www/'
-CONTAINER_NAME='dev-php56-dev'
+CONTAINER_NAME='php56-dev'
 DOCKER_REPO_IMG_TAG='fredericomartini/php:5.6-dev'
 LOCAL_PORT=5601 #start with the same version php
 #####################################
