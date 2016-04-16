@@ -1,26 +1,26 @@
-# php
+# PHP
 ### Repository to manage Dockerfiles of Php
 
-#### - Running at:
-* debian 8.3 
-* apache 2.4 see more [apache2.4-dev](https://github.com/fredericomartini-docker-libraries/apache/tree/apache-2.4-dev)
+#### - Running under:
+* debian 8.4 see more [Debian 8.4](https://github.com/fredericomartini-docker-libraries/debian/tree/8.4)
+* apache 2.4 see more [apache 2.4-dev](https://github.com/fredericomartini-docker-libraries/apache/tree/apache-2.4-dev)
 
 #### - PHP Version 5.6.17-0+deb8u1
 
 #### - Installed:
 
-    php5-curl 
-    php5-gd 
-    php5-mcrypt php5-intl 
-    php-apc 
-    php5-sqlite 
-    php5-mysql 
-    php5-pgsql 
-    php-pear 
-    php5-dev 
-   
-### Xdebug
-### PHP_CodeSniffer  
+ - php5-curl 
+ - php5-gd 
+ - php5-mcrypt php5-intl 
+ - php-apc 
+ - php5-sqlite 
+ - php5-mysql 
+ - php5-pgsql 
+ - php-pear 
+ - php5-dev 
+ - [XDEBUG 2.4.0](https://xdebug.org/)
+ - [PHP_CodeSniffer 2.6.0](http://pear.php.net/package/PHP_CodeSniffer/redirected)
+ - [PHP Mess Detector 2.4.2](https://phpmd.org/)
 
 #### - php.ini config:
 
@@ -34,4 +34,6 @@
 
     sudo chmod +x init-container-apache-php.sh
 
-[http://localhost:5601](http://localhost:5601)
+    ./init-container-apache-php.sh
+
+#### Available at: [http://localhost:56001](http://localhost:5600)
