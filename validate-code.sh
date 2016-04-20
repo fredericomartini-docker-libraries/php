@@ -6,6 +6,7 @@ IGNORE='vendor/*'
 HOME_DIR=$(pwd)
 FILES_TO_CHECK=$1
 STANDARD_DIR=$2
+TMP_DIR='/tmp/.tmp_validating'
 ################### Conf PHP CodeSniffer ####################
 # ignore warnings
 PHPCS_IGNORE_WARNINGS=1
@@ -29,11 +30,9 @@ function validate_and_set_conf() {
 
     #### set var's #####
 
-    #home_dir
-    HOME_DIR=$(pwd)
     #standard_dir
-    PHP_CS_STANDARD_DIR="$HOME_DIR/$STANDARD_DIR/phpcs/ruleset.xml"
-    PHP_MD_STANDARD_DIR="$HOME_DIR/$STANDARD_DIR/phpmd/ruleset.xml"
+    PHP_CS_STANDARD_DIR="$STANDARD_DIR/ruleset.xml"
+    PHP_MD_STANDARD_DIR="$STANDARD_DIR/ruleset.xml"
     PHPCS_STANDARD="--standard=$PHP_CS_STANDARD_DIR"
     PHPMD_STANDARD="$PHP_MD_STANDARD_DIR"
 

@@ -36,4 +36,13 @@
 
     ./init-container-apache-php.sh
 
+ #### - To validate code:
+  
+    sudo chmod +x validate-code.sh       
+    
+    ./validate-code $FILE_TO_CHECK $RULES
+
+ - $FILES_TO_CHECK Can be passed a dir or single file
+ - $RULES .xml file with rules Must be in # TODO aqui ajustar.. deixar dinâmico onde pega arquivos de regras.. 
+
 #### Available at: [http://localhost:56001](http://localhost:5600)
