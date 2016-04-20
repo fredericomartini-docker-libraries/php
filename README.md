@@ -5,19 +5,21 @@
 * debian 8.4 see more [Debian 8.4](https://github.com/fredericomartini-docker-libraries/debian/tree/8.4)
 * apache 2.4 see more [apache 2.4-dev](https://github.com/fredericomartini-docker-libraries/apache/tree/apache-2.4-dev)
 
-#### - PHP Version 5.6.17-0+deb8u1
+#### - PHP Version atualizar //todo
 
 #### - Installed:
 
- - php5-curl 
- - php5-gd 
- - php5-mcrypt php5-intl 
- - php-apc 
- - php5-sqlite 
- - php5-mysql 
- - php5-pgsql 
- - php-pear 
- - php5-dev 
+ - php7.0
+ - libapache2-mod-php7.0
+ - php7.0-curl
+ - php7.0-gd
+ - php7.0-mcrypt
+ - php7.0-intl
+ - php7.0-sqlite3
+ - php7.0-mysql
+ - php7.0-pgsql
+ - php7.0-dev
+ - php7.0-bz2
  - [XDEBUG 2.4.0](https://xdebug.org/)
  - [PHP_CodeSniffer 2.6.0](http://pear.php.net/package/PHP_CodeSniffer/redirected)
  - [PHP Mess Detector 2.4.2](https://phpmd.org/)
@@ -45,4 +47,4 @@
  - $FILES_TO_CHECK Can be passed a dir or single file
  - $RULES .xml file with rules Must be in # TODO aqui ajustar.. deixar dinâmico onde pega arquivos de regras.. 
 
-#### Available at: [http://localhost:56001](http://localhost:5600)
+#### Available at: [http://localhost:7000](http://localhost:7000)

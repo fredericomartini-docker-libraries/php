@@ -1,4 +1,4 @@
-FROM fredericomartini/php:5.6-prod
+FROM fredericomartini/apache:2.4-dev
 MAINTAINER Frederico Martini <fredmalmeida@gmail.com>
 
 # Let the conatiner know that there is no tty

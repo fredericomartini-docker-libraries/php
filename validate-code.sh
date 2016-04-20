@@ -1,5 +1,5 @@
 #!/bin/bash
-DOCKER_REPO_IMG_TAG='fredericomartini/php:5.6-dev'
+DOCKER_REPO_IMG_TAG='fredericomartini/php:7.0-dev'
 #LOG_FILE 
 LOG_FILE='/tmp/log-validation-phpcs-phpmd.txt'
 IGNORE='vendor/*'
