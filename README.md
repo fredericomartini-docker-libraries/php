@@ -5,7 +5,7 @@
 * debian 8.4 see more [Debian 8.4](https://github.com/fredericomartini-docker-libraries/debian/tree/8.4)
 * apache 2.4 see more [apache 2.4-dev](https://github.com/fredericomartini-docker-libraries/apache/tree/apache-2.4-dev)
 
-#### - PHP Version atualizar //todo
+#### - PHP Version 7.0.5-1~dotdeb+8.1 
 
 #### - Installed:
 
