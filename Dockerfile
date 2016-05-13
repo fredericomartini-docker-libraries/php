@@ -7,6 +7,8 @@ ADD php.sh /usr/sbin/
 RUN chmod +x /usr/sbin/php.sh
 RUN sh /usr/sbin/php.sh
 
+RUN adduser --disabled-password --gecos '' non-root
+
 #clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
