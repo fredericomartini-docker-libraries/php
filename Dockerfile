@@ -12,4 +12,7 @@ RUN adduser --disabled-password --gecos '' non-root
 #clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-CMD ["service", "apache2", "restart"]
+RUN ["service", "apache2", "restart"] 
+
+CMD ["service", "apache2", "start"]
+
