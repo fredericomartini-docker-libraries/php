@@ -20,6 +20,7 @@
  - php7.0-pgsql
  - php7.0-dev
  - php7.0-bz2
+ - php7.0-gmp
  - [XDEBUG 2.4.0](https://xdebug.org/)
  - [PHP_CodeSniffer 2.6.0](http://pear.php.net/package/PHP_CodeSniffer/redirected)
  - [PHP Mess Detector 2.4.2](https://phpmd.org/)
