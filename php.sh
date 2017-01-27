@@ -17,7 +17,7 @@ rm -rf dotdeb.gpg
 #update
 apt-get update
 
-apt-get -y install php7.0 libapache2-mod-php7.0 php7.0-curl php7.0-gd php7.0-mcrypt php7.0-intl php7.0-sqlite3 php7.0-mysql php7.0-pgsql php7.0-dev php7.0-bz2 php7.0-gmp wget nano
+apt-get -y install php7.0 libapache2-mod-php7.0 php7.0-curl php7.0-gd php7.0-mcrypt php7.0-intl php7.0-sqlite3 php7.0-mysql php7.0-pgsql php7.0-dev php7.0-bz2 php7.0-gmp php7.0-xml php7.0-soap wget nano
 INSTALL_SUCCESS=$?
 
 #verifica se foi instalado com sucesso
